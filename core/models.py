@@ -39,6 +39,15 @@ class CV(models.Model):
         return "Princewil Resume"
 
 
+class Education(models.Model):
+    year_of_entry = models.CharField(max_length=4)
+    institution_name = models.CharField(max_length=255)
+    degree_name = models.CharField(max_length=255)
+    description = models.TextField()
+
+    def __str__(self):
+        return self.institution_name
+
 class Social(models.Model):
     github = models.URLField()
     twitter = models.URLField()
