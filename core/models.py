@@ -47,6 +47,18 @@ class Education(models.Model):
 
     def __str__(self):
         return self.institution_name
+    
+
+class Experience(models.Model):
+    start_year = models.CharField(max_length=4)
+    end_year = models.CharField(max_length=7, default="current")
+    institution_name = models.CharField(max_length=255)
+    role = models.CharField(max_length=255)
+    description = models.TextField()
+
+    def __str__(self):
+        return self.institution_name
+
 
 class Social(models.Model):
     github = models.URLField()
