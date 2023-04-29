@@ -15,22 +15,12 @@ class About(models.Model):
         return "Princewil About"
 
 
-class Niche(models.Model):
-    title = models.CharField(max_length=255)
-    icon = models.CharField(max_length=255)
-    description = models.TextField
+class CodingSkill(models.Model):
+    name = models.CharField(max_length=255)
 
-    def __str__(self):
-        return str(self.title)
+    def __str__(self) -> str:
+        return self.name
 
-
-class Profile(models.Model):
-    role = models.CharField(max_length=255)
-    picture = models.URLField()
-
-    def __str__(self):
-        return "Princewil Profile"
-    
 
 class CV(models.Model):
     link = models.URLField()
@@ -58,6 +48,23 @@ class Experience(models.Model):
 
     def __str__(self):
         return self.institution_name
+
+
+class Niche(models.Model):
+    title = models.CharField(max_length=255)
+    icon = models.CharField(max_length=255)
+    description = models.TextField
+
+    def __str__(self):
+        return str(self.title)
+
+
+class Profile(models.Model):
+    role = models.CharField(max_length=255)
+    picture = models.URLField()
+
+    def __str__(self):
+        return "Princewil Profile"
 
 
 class Social(models.Model):
