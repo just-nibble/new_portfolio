@@ -7,7 +7,9 @@ from . import models
 
 def homepage(request):
     context = {
-        'about': models.About.objects.get(id=1)
+        'about': models.About.objects.get(id=1),
+        'education': models.Education.objects.all().order_by("-id"),
+        'experiences': models.Experience.objects.all().order_by("-id"),
     }
     return render(request, 'index.html', context=context)
 
