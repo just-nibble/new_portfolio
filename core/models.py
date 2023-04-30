@@ -59,6 +59,18 @@ class Niche(models.Model):
         return str(self.title)
 
 
+class Portfolio(models.Model):
+    category = models.CharField(max_length=255)
+    title = models.CharField(max_length=255)
+    image = models.URLField()
+    link = models.URLField()
+    detail = models.TextField()
+    technologies = models.JSONField(null=True)
+
+    def __str__(self):
+        return self.title
+
+
 class Profile(models.Model):
     role = models.CharField(max_length=255)
     picture = models.URLField()
