@@ -43,7 +43,7 @@
           <header id="site_header" class="header mobile-menu-hide">
             <div class="header-content">
               <div class="header-photo">
-                <img src="https://res.cloudinary.com/dexijstc3/image/upload/q_auto/portfolio/img/main_photo_fkdfm6.png" alt="Princewill Olaiya">
+                <img src="https://res.cloudinary.com/dexijstc3/image/upload/q_auto:low/portfolio/img/main_photo_fkdfm6.png" alt="Princewill Olaiya">
               </div>
               <div class="header-titles">
                 <h2>Princewill Olaiya</h2>
@@ -86,17 +86,17 @@
 
             <div class="social-links">
               <ul>
-                <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="{{social.linkedin}}" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="{{social.github}}" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="{{social.github}}" target="_blank"><i class="fab fa-twitter"></i></a></li>
               </ul>
             </div>
 
             <div class="header-buttons">
-              <a href="#" target="_blank" class="btn btn-primary">Download CV</a>
+              <a href="{{cv.link}}" target="_blank" class="btn btn-primary">Download CV</a>
             </div>
 
-            <div class="copyrights">© 2020 All rights reserved.</div>
+            <div class="copyrights">© 2023 All rights reserved.</div>
           </header>
 
           <!-- Mobile Navigation -->
@@ -158,11 +158,6 @@
                       <div class="info-list">
                         <ul>
                           <li>
-                            <span class="title">Age</span>
-                            <span class="value">{{about.age}}</span>
-                          </li>
-
-                          <li>
                             <span class="title">{{about.state}}</span>
                             <span class="value">{{about.country}}</span>
                           </li>
@@ -181,68 +176,6 @@
                     </div>
                   </div>
                   <!-- End of Personal Information -->
-
-                  <div class="white-space-50"></div>
-
-                  <!-- Services -->
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <div class="block-title">
-                        <h3>What <span>I Do</span></h3>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                      <div class="col-inner">
-                        <div class="info-list-w-icon">
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-store"></i>
-                            </div>
-                            <div class="ci-text">
-                              <h4>Ecommerce</h4>
-                              <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
-                            </div>
-                          </div>
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-laptop-phone"></i>
-                            </div><div class="ci-text">
-                              <h4>Web Design</h4>
-                              <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6">
-                      <div class="col-inner">
-                        <div class="info-list-w-icon">
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-pencil"></i>
-                            </div>
-                            <div class="ci-text">
-                              <h4>Copywriting</h4>
-                              <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
-                            </div>
-                          </div>
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-flag"></i>
-                            </div><div class="ci-text">
-                              <h4>Management</h4>
-                              <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End of Services -->
                 </div>
               </section>
               <!-- End of About Me Subpage -->
@@ -318,26 +251,7 @@
                         </ul>
                       </div>
                       <!-- End of Coding Skills -->
-
-                      <div class="white-space-10"></div>
-
-                      <!-- Knowledges -->
-                      <div class="block-title">
-                        <h3>Knowledges</h3>
-                      </div>
-
-                      <ul class="knowledges">
-                        <li>Marketing</li>
-                        <li>Print</li>
-                        <li>Digital Design</li>
-                        <li>Social Media</li>
-                        <li>Time Management</li>
-                        <li>Communication</li>
-                        <li>Problem-Solving</li>
-                        <li>Social Networking</li>
-                        <li>Flexibility</li>
-                      </ul>
-                      <!-- End of Knowledges -->
+                  
                     </div>
                     <!-- End of Skills & Certificates -->
                   </div>
@@ -440,38 +354,33 @@
 
                     <!-- Contact Form -->
                     <div class="col-xs-12 col-sm-8">
-                      <div id="map" class="map">
-                          <div class="lmpixels-map">
-                            	<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q={{about.state}}%20{{about.country}}&amp;amp;t=m&amp;amp;z=16&amp;amp;output=embed&amp;amp;iwloc=near&amp;output=embed"></iframe>
-                            </div>
-                      </div>
                       <div class="block-title">
                         <h3>How Can I <span>Help You?</span></h3>
                       </div>
 
-                      <form id="contact_form" class="contact-form" action="https://lmpixels.com/demo/breezycv/darkfw/1/contact_form/contact_form.php" method="post">
+                      <form id="contact_form" class="contact-form" method="post">
 
                         <div class="messages"></div>
-
+                        {% csrf_token %}
                         <div class="controls two-columns">
                           <div class="fields clearfix">
                             <div class="left-column">
                               <div class="form-group form-group-with-icon">
-                                <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Name is required.">
+                                {{form.full_name}}
                                 <label>Full Name</label>
                                 <div class="form-control-border"></div>
                                 <div class="help-block with-errors"></div>
                               </div>
 
                               <div class="form-group form-group-with-icon">
-                                <input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required.">
+                                {{form.email}}
                                 <label>Email Address</label>
                                 <div class="form-control-border"></div>
                                 <div class="help-block with-errors"></div>
                               </div>
 
                               <div class="form-group form-group-with-icon">
-                                <input id="form_subject" type="text" name="subject" class="form-control" placeholder="" required="required" data-error="Subject is required.">
+                                {{form.subject}}
                                 <label>Subject</label>
                                 <div class="form-control-border"></div>
                                 <div class="help-block with-errors"></div>
@@ -479,7 +388,7 @@
                             </div>
                             <div class="right-column">
                               <div class="form-group form-group-with-icon">
-                                <textarea id="form_message" name="message" class="form-control" placeholder="" rows="7" required="required" data-error="Please, leave me a message."></textarea>
+                                {{form.message}}
                                 <label>Message</label>
                                 <div class="form-control-border"></div>
                                 <div class="help-block with-errors"></div>
@@ -503,15 +412,12 @@
           </div>
 
       </div>
-    </div>
-
-    {% comment %} <script data-cfasync="false" src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> {% endcomment %}
-    
+    </div>    
     <script src="{% static 'js/jquery-2.1.3.min.js' %}"></script>
     <script src="{% static 'js/modernizr.custom.js' %}"></script>
     <script src="{% static 'js/animating.js' %}"></script>
 
-    <script src="{% static '' %}js/imagesloaded.pkgd.min.js"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
 
     <script src="{% static 'js/perfect-scrollbar.min.js' %}"></script>
     <script src="{% static 'js/jquery.shuffle.min.js' %}"></script>
@@ -521,8 +427,5 @@
 
     <script src="{% static 'js/validator.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
-  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7bdefb9d78b21c89","version":"2023.3.0","r":1,"b":1,"token":"94b99c0576dc45bf9d669fb5e9256829","si":100}' crossorigin="anonymous"></script>
 </body>
-
-<!-- Mirrored from lmpixels.com/demo/breezycv/darkfw/1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Apr 2023 12:56:44 GMT -->
 </html>

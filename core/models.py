@@ -22,6 +22,17 @@ class CodingSkill(models.Model):
         return self.name
 
 
+
+class Contact(models.Model):
+    full_name = models.CharField(max_length=255)
+    email = models.EmailField()
+    subject = models.CharField(max_length=255)
+    message = models.TextField()
+
+    def __str__(self):
+        return self.full_name
+
+
 class CV(models.Model):
     link = models.URLField()
 

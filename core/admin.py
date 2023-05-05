@@ -4,6 +4,7 @@ from . import models
 admin.site.register(
     [
         models.About, models.CV, models.CodingSkill,
+        models.Contact,
         models.Education, models.Experience, models.Niche,
         models.Portfolio,
         models.Profile, models.Social, models.Testimonial,

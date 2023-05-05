@@ -31,6 +31,8 @@ env = environ.Env(
 
 DEBUG = env('DEBUG')
 
+print(DEBUG)
+
 ALLOWED_HOSTS = []
 
 
