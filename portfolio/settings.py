@@ -30,7 +30,7 @@ env = environ.Env(
     DEBUG=(bool, True)
 )
 
-environ.Env.read_env(env_file=f'{BASE_DIR}/.env', overwrite=True)
+environ.Env.read_env()
 
 DEBUG = env('DEBUG')
 
