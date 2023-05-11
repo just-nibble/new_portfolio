@@ -276,9 +276,11 @@
                             <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
                           </li>
                           {% for item in portfolio %}
+                            {% ifchanged  %}
                               <li>
-                                <a class="filter btn btn-sm btn-link" data-group="{% ifchanged  %}category_{{item.category}}{% endifchanged %}">{{item.category}}</a>
+                                <a class="filter btn btn-sm btn-link" data-group="category_{{item.category}}">{{item.category}}</a>
                               </li>
+                            {% endifchanged %}
                           {% endfor %}
                         </ul>
 
