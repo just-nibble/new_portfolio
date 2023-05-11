@@ -275,7 +275,7 @@
                           <li class="active">
                             <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
                           </li>
-                          {% for item in portfolio %}
+                          {% for item in portfolio |dictsort:'category' %}
                             {% ifchanged  %}
                               <li>
                                 <a class="filter btn btn-sm btn-link" data-group="category_{{item.category}}">{{item.category}}</a>
